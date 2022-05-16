@@ -1,7 +1,9 @@
 """
-Name:           generateregulargrid.py
-Compatibility:  Python 3.10
-Description:    This program creates a regularly spaced grid of points from x,y points for the lower left hand and upper
+NAME:           DynamicGridGeneration.py
+
+COMPATIBILITY:  Python 3.10
+
+DESCRIPTION:    This program creates a regularly spaced grid of points from x,y points for the lower left hand and upper
 right hand corners of a rectangular domain at a user specified grid resolution.
 
 TO RUN:
@@ -10,12 +12,14 @@ TO RUN:
 
 DATA FORMAT:    Manual input
 
-Requires:       pyproj, shapely, numpy
+REQUIRES:       pyproj, shapely, numpy
 
-ToDo:           1) implement polygon generation
+TODO:           1) implement polygon generation
 
 AUTHOR:         Harris Bienn
+
 ORGANIZATION:   The Water Institute of The Gulf
+
 Contact:        hbienn@thewaterinstitute.org
 
 """
@@ -25,12 +29,12 @@ import shapely.geometry as geo
 import numpy as np
 
 # ** INPUTS **
-in_crs = CRS("EPSG:4326")  # EPSG:4326 (WGS84, Geographic, units in degrees) - https://epsg.io/4326
-proj_crs = CRS("EPSG: 26915")  # EPSG:26915 (Projected, NAD83, units in meters) - https://epsg.io/26915
+in_crs = CRS('EPSG:4326')  # EPSG:4326 (WGS84, Geographic, units in degrees) - https://epsg.io/4326
+proj_crs = CRS('EPSG: 26915')  # EPSG:26915 (Projected, NAD83, units in meters) - https://epsg.io/26915
 sw = geo.Point((-91.0, 29.0))  # Create corners of rectangle to be transformed to a grid
 ne = geo.Point((-89.0, 31.0))  # units should be same as input to transformer
 grid_spacing: int = 100  # Grid resolution in meters
-out_path = r'Z:\Documents\ArcGIS\Projects\Smartport\grid_output2.csv'
+out_path = r'Z:\Path\Name.csv'  # Output location and file extension of plain-text .csv
 
 
 # *** FUNCTIONS ***
@@ -64,6 +68,8 @@ with open(out_path, 'w') as of:
     for points in grid_points:
         of.write('{:f},{:f}\n'.format(points.x, points.y))
 
+"""
+****UNIMPLEMENTED****
 # Iterate polygons over 2D area
 # grid_polygons = []
 # x2 = transformed_sw[0]
@@ -79,3 +85,4 @@ with open(out_path, 'w') as of:
 #    of.write('lon,lat\n')
 #    for polygons in grid_polygons:
 #        of.write('{:f},{:f}\n'.format(polygons.x2, polygons.y2))
+"""
