@@ -12,7 +12,7 @@ TO RUN:
 
 DATA FORMAT:    Manual input
 
-Requires:       pyproj, shapely, numpy
+REQUIRES:       pyproj, shapely, numpy
 
 TODO:           1) implement polygon generation
 
