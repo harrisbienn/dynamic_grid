@@ -1,9 +1,9 @@
 # DynamicGridGeneration
-Name:           dynamicgridgeneration.py
+NAME:           dynamicgridgeneration.py
 
-Compatibility:  Python 3.10
+COMPATIBILITY:  Python 3.10
 
-Description:    This program creates a regularly spaced grid of points from x,y points for the lower left hand and upper
+DESCRIPTION:    This program creates a regularly spaced grid of points from x,y points for the lower left hand and upper
 right hand corners of a rectangular domain at a user specified grid resolution.
 
 TO RUN:
@@ -14,8 +14,10 @@ DATA FORMAT:    Manual input
 
 Requires:       pyproj, shapely, numpy
 
-ToDo:           1) implement polygon generation
+TODO:           1) implement polygon generation
 
 AUTHOR:         Harris Bienn
+
 ORGANIZATION:   The Water Institute of The Gulf
-Contact:        hbienn@thewaterinstitute.org
+
+CONTACT:        hbienn@thewaterinstitute.org
