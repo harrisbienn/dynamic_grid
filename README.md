@@ -1,5 +1,5 @@
 # DynamicGridGeneration
-NNAME:           backpackgrid.py
+NAME:           backpackgrid.py
 
 COMPATIBILITY:  Python 3.10
 
