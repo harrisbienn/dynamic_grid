@@ -1,4 +1,4 @@
-# DynamicGridGeneration
+# SmartPort Dynamic Grid Generation
 COMPATIBILITY:  Python 3.10
 
 DESCRIPTION:    This repo contains scripts that help create a regularly spaced grid of points from x,y points for the lower left hand and upper
@@ -6,9 +6,8 @@ right hand corners of a rectangular domain at a user specified grid resolution. 
 
 TO RUN:
 
-    -   Run mapper.py to create a .geojson of the bounding polygon you want to generate a grid for.
-        Keep it in the downloads directory on your local drive
-       
+    -   Code can be run as a module by running run.py (dependent on pocketgrid.py and mapper.py). 
+
     -   Modify function values as desired. Default variable assignments:
           
           -  in_path - attempts to locate "boundingbox.geojson" in your downloads folder
@@ -22,8 +21,6 @@ TO RUN:
                 (https://epsg.io/26915)
           
           -  grid_spacing = 500 - assigned as the default grid spacing in meters
-          
-          -  grid_nparray - modify to change the variable name of the numpy array output grid
     
     -   Run the code
 
