@@ -1,9 +1,7 @@
 # DynamicGridGeneration
-NAME:           backpackgrid.py
-
 COMPATIBILITY:  Python 3.10
 
-DESCRIPTION:    This program creates a regularly spaced grid of points from x,y points for the lower left hand and upper
+DESCRIPTION:    This repo contains scripts that help create a regularly spaced grid of points from x,y points for the lower left hand and upper
 right hand corners of a rectangular domain at a user specified grid resolution. Outputs as nparray and plaintext.
 
 TO RUN:
@@ -28,12 +26,6 @@ TO RUN:
           -  grid_nparray - modify to change the variable name of the numpy array output grid
     
     -   Run the code
-
-DATA FORMAT:    Manual input
-
-REQUIRES:       os, pathlib, geopandas, pyproj, shapely, numpy
-
-TODO:           1) implement polygon generation
 
 AUTHOR:         Harris Bienn
 
