@@ -6,7 +6,7 @@ right hand corners of a rectangular domain at a user specified grid resolution. 
 
 TO RUN:
 
-    -   Code can be run as a module by running run.py (dependent on pocketgrid.py and mapper.py). 
+    -   Code can be run as a module by running gridinit_basic.py or gridinit.py (dependent on console.py, pocketgrid.py, and mapper.py). 
 
     -   Modify function values as desired. Default variable assignments:
           
